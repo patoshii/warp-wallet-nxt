@@ -300,7 +300,7 @@ window.package = {
           $('#btn-reset').attr('disabled', false).html('Clear &amp; reset');
           $('#public-address').val(res["public"]);
           $('#private-key').val(res["private"]);
-          $('#combined-key').val(res["public"] + res["private"]);
+          $('#combined-key').val(res["public"] + res["private"] + $("#salt").val());
           console.log(res["private"]); //duckx
           console.log($("#salt").val()); //duckx
 
